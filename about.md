@@ -9,7 +9,6 @@ hide_description: true
 
 # About
 
-블로그 천천히 익히며 옮기는 중입니다.
 [예전 블로그](https://velog.io/@hound_woo)
 
 <!--author-->

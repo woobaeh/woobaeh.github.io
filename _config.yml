@@ -49,20 +49,31 @@ author:
 menu:
   - title: About
     url: /about/
-  - title: TIL
-    url: /til
-  - title: Algorithm
-    url: /algorithm
-  - title: JavaScript
-    url: /javascript
-  - title: Subcat
-    url: /subcat/
+  - title: Study
+    url: /study/
     submenu:
-      - title: Test1
-        url: /test1/
-      - title: Test2
-        url: /test2/
-
+      - title: TIL
+        url: /til/
+      - title: Algorithm
+        url: /algorithm/
+      - title: Javascript
+        url: /javascript/
+      - title: Node.js
+        url: /nodejs/
+      - title: React
+        url: /react/
+      - title: Typescript
+        url: /typescript/
+      - title: HTML
+        url: /html/
+      - title: CSS
+        url: /css/
+  - title: Read
+    url: /read/
+  - title: Project
+    url: /project/
+  - title: Etc
+    url: /etc/
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
 legal:
