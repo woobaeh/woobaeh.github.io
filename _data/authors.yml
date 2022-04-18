@@ -9,7 +9,6 @@ author1:
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about: 반갑습니다. 프론트엔드 개발자를 꿈꾸는 훈련생입니다.
 
-    Please check my [CV](/assets/CV.pdf)
   # This photo will be used in the about section
   picture:
     path: /assets/img/me/me.jpeg
