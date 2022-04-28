@@ -21,7 +21,7 @@ Github pages 블로그를 운영하는 중입니다.💻
 
 제 📚**관심분야**는 다음과 같습니다.
 
-> 📝 web frontend
+> 📝 web frontend , web backend
 
 부족한 제 블로그를 방문해주셔서 감사합니다! 😃
 
