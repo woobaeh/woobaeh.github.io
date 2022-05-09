@@ -20,6 +20,7 @@ description: >
 - [Typescript]{:.heading.flip-title}
 - [HTML]{:.heading.flip-title}
 - [CSS]{:.heading.flip-title}
+- [Git]{:.heading.flip-title}
 
 [til]: /til/
 [algorithm]: /algorithm/
@@ -29,3 +30,4 @@ description: >
 [typescript]: /typescript/
 [html]: /html/
 [css]: /css/
+[git]: /git/

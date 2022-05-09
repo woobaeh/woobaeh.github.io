@@ -70,6 +70,8 @@ menu:
         url: /html/
       - title: CSS
         url: /css/
+      - title: Git
+        url: /git/
   - title: Read
     url: /read/
   - title: Project
@@ -187,7 +189,7 @@ kramdown:
 
 # Set your Google Analytics id to receive `pageview` events.
 # To remove Google Anaylics from your page, remove the line below.
-google_analytics:      G-X1BF4MD7QG
+google_analytics: G-X1BF4MD7QG
 
 # Setting a disqus shortname will enable the comment section on
 # pages with `comments: true` in the front matter.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: js test
+title: Event Delegation
 description: >
 
 sitemap: false

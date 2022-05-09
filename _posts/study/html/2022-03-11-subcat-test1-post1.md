@@ -18,8 +18,8 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](another-page).
 
-- toc
-  {:toc .large-only}
+* toc
+{:toc .large-only}
 
 ## Header 2
 
