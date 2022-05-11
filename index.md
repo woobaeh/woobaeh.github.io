@@ -2,7 +2,6 @@
 layout: about
 image: /assets/img/me/me.jpg
 description: >
-  인공지능을 공부하고 있는 대학원생입니다.
 hide_description: false
 ---
 
@@ -26,7 +25,6 @@ Github pages 블로그를 운영하는 중입니다.💻
 부족한 제 블로그를 방문해주셔서 감사합니다! 😃
 
 <div class="me">
-    <div><img src= "/assets/me/caleb-george-old.jpg"></div>
     <div><img src= "/assets/me/caleb-george-old.jpg"></div>
     <div><img src= "/assets/me/steve-harvey.jpg"></div>
     <div><img src= "/assets/me/wade-lambert.jpg"></div>
