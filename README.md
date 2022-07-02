@@ -1,1 +1,1 @@
-a.k.a my development diary
+A.K.A. Dev Diary
