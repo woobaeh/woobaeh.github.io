@@ -10,5 +10,6 @@ hide_description: true
 # About
 
 [예전 블로그](https://velog.io/@hound_woo)
+[Resume](https://my.surfit.io/w/925812619)
 
 <!--author-->
