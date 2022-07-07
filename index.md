@@ -23,6 +23,7 @@ Github pages 블로그를 운영하는 중입니다.💻
 > 📝 web frontend , web backend
 
 부족한 제 블로그를 방문해주셔서 감사합니다! 😃
+[Resume](https://my.surfit.io/w/925812619)
 
 <div class="me">
     <div><img src= "/assets/me/caleb-george-old.jpg"></div>
