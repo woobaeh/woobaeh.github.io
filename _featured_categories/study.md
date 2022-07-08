@@ -5,7 +5,6 @@ slug: study
 menu: true
 submenu: true
 description: >
-  하위 메뉴 예시
 ---
 
 # Study

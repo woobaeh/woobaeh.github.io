@@ -10,7 +10,7 @@ slug: read
 
 # (Optional) Write a short (~150 characters) description of this featured tag.
 description: >
-  감상문
+  What I Read
 
 # (Optional) You can disable grouping posts by date.
 # no_groups: true
