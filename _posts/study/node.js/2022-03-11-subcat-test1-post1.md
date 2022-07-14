@@ -1,6 +1,6 @@
 ---
 layout: post
-title: nodejs test
+title: npm install -g EACCES permission denied 해결하기
 description: >
 
 sitemap: false
@@ -10,123 +10,44 @@ categories:
   - nodejs
 ---
 
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
 
-There should be whitespace between paragraphs.
+npm install -g 전역 설치 시
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+아래와 같은 에러가 발생하는 경우가 있습니다.
+여기서는 typescript를 전역으로 설치 시
+아래와 같이 에러가 발생하였습니다.
 
-[Link to another page](another-page).
+<img src="../../../assets/img/til/error.png" width="1000" height="300">
 
-- toc
-  {:toc .large-only}
+에러 메시지에서 보여지듯이
 
-## Header 2
+/usr/lib/node_modules에 대한 권한이 없어서 생기는 오류 메시지 입니다.
 
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
+가장 간단한 해결방법은
+관리자 권한인 sudo로 설치를 하면 해결됩니다.
 
-### Header 3
+하지만 npm 공식 사이트에서는
+npm 기본 경로를 변경해서 사용할 것을 권장합니다.
+참고 : [npm 사이트](https://docs.npmjs.com/resolving-eacces-permissions-errors-when-installing-packages-globally#manually-change-npms-default-directory)
 
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l);
-  return true;
-};
-```
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+해결방법
+홈 디렉터리에서 전역 설치를 위한 디렉터리를 만듭니다
+- mkdir ~/.npm-global
 
-#### Header 4
+새 디렉토리 경로를 사용하도록 npm 구성합니다
+- npm config set prefix '~/.npm-global'
 
-- This is an unordered list following a header.
-- This is an unordered list following a header.
-- This is an unordered list following a header.
+텍스트 편집기에서 ~/.profile 파일을 열거나 만들고
+다음 줄을 추가합니다
+- export PATH=~/.npm-global/bin:$PATH
 
-##### Header 5
+시스템 변수를 업데이트합니다.
+- source ~/.profile
 
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+테스트하려면 sudo를 사용하지 않고 전역 적으로 패키지를 설치합니다
+- npm install -g typescript
+에러 없이 설치되는 것을 확인할 수 있습니다.
 
-###### Header 6
-
-| head1        | head two          | three |
-| :----------- | :---------------- | :---- |
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
----
-
-### Here is an unordered list:
-
-- Item foo
-- Item bar
-- Item baz
-- Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![](https://assets-cdn.github.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![](https://guides.github.com/activities/hello-world/branching.png)
-
-### Definition lists
-
-Name
-: Godzilla
-
-Born
-: 1952
-
-Birthplace
-: Japan
-
-Color
-: Green
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this. Or is it?
-```
-
-```
-The final element.
-```
+<img src="../../../assets/img/til/fix.png" width="1000" height="300">

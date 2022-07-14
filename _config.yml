@@ -101,8 +101,8 @@ paginate_path: /:num/
 # Theme
 # ---------------------------------------------------------------------------------------
 
-# theme: jekyll-theme-hydejack
-remote_theme: hydecorp/hydejack@v9
+theme: jekyll-theme-hydejack
+# remote_theme: hydecorp/hydejack@v9
 
 # Customizaton
 # ----------------------------------------------------------------------------------------
@@ -182,7 +182,7 @@ defaults:
 kramdown:
   math_engine: mathjax
   math_engine_opts: {}
-  footnote_backlink: "&#x21a9;&#xfe0e;"
+  footnote_backlink: '&#x21a9;&#xfe0e;'
 
 # 3rd Party Integrations
 # ----------------------------------------------------------------------------------------
@@ -325,7 +325,7 @@ collections:
 exclude:
   - .jekyll-cache
   - .sass-cache
-  - "*.toml"
+  - '*.toml'
   - vendor
   - Gemfile
   - Gemfile.lock
@@ -396,7 +396,7 @@ titles_from_headings:
   collections: true
 
 compress_html:
-  comments: ["<!--", "-->"]
+  comments: ['<!--', '-->']
   clippings: all
   endings: all
   ignore:
